@@ -15,8 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prebuild": "echo $MY_KEY"
-
+    "postinstall": "netlify-lambda install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.1"
   }
 }
